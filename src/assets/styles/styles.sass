@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato')
 @import 'node_modules/materialize-css/sass/materialize.scss'
 @import main
+@import responsive
 
 $font-stack:    'Lato', sans-serif
 $default-color: '#595959'
@@ -48,8 +49,12 @@ nav
 
 video
     object-fit: cover
-    background-position: 50% 50%
-    position: relative
+    position: aboslute
+    width: auto
+    height: auto
+    min-width: 100%
+    min-height: 100%
+    overflow: hidden
     
 .video-play
     min-height: 100%
@@ -109,8 +114,51 @@ video
     position: relative
 
 .content
-    padding-top: 10%
+    padding-top: 15%
+    height: 350px
+    width: auto
 
-.copy
+    .copy
+        background: #fff
+        height: inherit
+        box-shadow: 10px 10px 2px #222
+        
+
+        h2
+            padding-top: 22%
+            font-size: 36px
+            color: #595959
+
+        p
+            padding-top: 3%
+            font-size: 16px
+            color: #595959
+    
+    .image-set
+        display: inline
+        height: 350px
+        img
+            height: inherit
+            width: auto
+
+.workswith
+    height: 100vh
+
+.demo
+    height: 50vh
+
+.features
+    height: 100vh
+
+.enjoy-bg
+    height: 50vh
+    background: url('../media/img/section7back.jpg') center no-repeat
+    background-size: cover
+    z-index: -1
+
+.enjoy
+    color: white
+
+footer
+    height: 6rem
     background: #fff
-    height: 400px
