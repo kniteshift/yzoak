@@ -4,10 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "babel-node server.js",
-    "server-dev": "nodemon server.js --exec babel-node",
-    "clean": "rimraf build",
-    "build": "npm run clean && webpack",
+    "server-dev": "nodemon server.js",
+    "clean-front": "rimraf build && rimraf dist",
+    "build": "npm run clean-front && webpack",
     "serve": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

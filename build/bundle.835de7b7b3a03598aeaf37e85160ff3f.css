@@ -9261,3 +9261,51 @@ p {
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+.z-depth-0 {
+  background-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.logo {
+  height: 65px;
+}
+
+.nav-wrapper {
+  text-transform: uppercase;
+}
+
+.navbar-fixed {
+  height: 0;
+}
+
+.navbar-black {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+video {
+  object-fit: cover;
+}
+
+.video-play {
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+nav {
+  top: 2rem;
+  text-shadow: 1px 1px #000;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-attachement: fixed;
+  position: relative;
+}
