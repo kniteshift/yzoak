@@ -2,7 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 
 const app = express()
-const PORT = 8080 || process.env.PORT
+const PORT = process.env.PORT || 8080
 const pub = __dirname + "/build/"
 
 app.use(morgan('dev'))
