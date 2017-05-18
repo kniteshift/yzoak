@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "heroku": "npm run build && heroku create",
+    "heroku": "npm run build && git add . && git commit -m 'new build' && git push heroku master",
     "start": "node server.js",
     "server-dev": "nodemon server.js",
     "clean-front": "rimraf build && rimraf dist",

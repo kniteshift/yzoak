@@ -8,7 +8,9 @@ $default-color: '#595959'
 
 html
     font-family: $font-stack
-    overflow: none
+
+section
+    overflow: hidden
 
 .z-depth-0
     background-color: transparent
@@ -55,6 +57,7 @@ video
     min-width: 100%
     min-height: 100%
     overflow: hidden
+    z-index: -2
     
 .video-play
     min-height: 100%
@@ -80,7 +83,7 @@ video
 
 .hero__msg
     top: 40%
-    left: 0
+    left: 5%
     z-index: 8
     position: relative
     color: white
@@ -91,18 +94,20 @@ video
         margin-top: 2%
 
 .full-video
-    top: 80%
+    top: 60%
     left: 1%
     z-index: 5
     position: relative
     text-shadow: 1px 1px #222
     font-size: 1.5rem
     
+    a,
     a:link,
     a:visited,
     a:active
         text-decoration: none
         color: white
+        z-index: 99999999
         
 .scroll
     background: url('../media/img/sec3back.jpg') bottom center fixed  no-repeat
@@ -111,13 +116,13 @@ video
     min-height: 100%
 
 .take-control
-    height: 700px
+    min-height: 755px
     position: relative
-    min-height: 100%
+    height: auto
     width: auto
 
 .content
-    padding-top: 15%
+    padding-top: 18%
     height: 350px
     width: auto
 

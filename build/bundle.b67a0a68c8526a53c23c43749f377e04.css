@@ -9280,15 +9280,11 @@ p {
   h2 {
     padding-top: 2rem !important;
   }
-
-  .take-control {
-    height: 75vh !important;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   .take-control {
-    height: 73vh !important;
+    height: 1050px !important;
   }
 }
 
@@ -9321,17 +9317,21 @@ p {
   }
 
   .content {
+    padding-top: 10% !important;
     margin-left: 15% !important;
   }
 
   .take-control {
-    height: 60vh !important;
+    height: 770px !important;
   }
 }
 
 html {
   font-family: "Lato", sans-serif;
-  overflow: none;
+}
+
+section {
+  overflow: hidden;
 }
 
 .z-depth-0 {
@@ -9388,6 +9388,7 @@ video {
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
+  z-index: -2;
 }
 
 .video-play {
@@ -9418,7 +9419,7 @@ video {
 
 .hero__msg {
   top: 40%;
-  left: 0;
+  left: 5%;
   z-index: 8;
   position: relative;
   color: white;
@@ -9431,7 +9432,7 @@ video {
 }
 
 .full-video {
-  top: 80%;
+  top: 60%;
   left: 1%;
   z-index: 5;
   position: relative;
@@ -9439,11 +9440,13 @@ video {
   font-size: 1.5rem;
 }
 
+.full-video a,
 .full-video a:link,
 .full-video a:visited,
 .full-video a:active {
   text-decoration: none;
   color: white;
+  z-index: 99999999;
 }
 
 .scroll {
@@ -9453,14 +9456,14 @@ video {
 }
 
 .take-control {
-  height: 700px;
+  min-height: 755px;
   position: relative;
-  min-height: 100%;
+  height: auto;
   width: auto;
 }
 
 .content {
-  padding-top: 15%;
+  padding-top: 18%;
   height: 350px;
   width: auto;
 }
