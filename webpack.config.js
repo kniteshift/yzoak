@@ -7,7 +7,7 @@ const extractSass = new ExtractTextPlugin({
 	filename: "[name].[contenthash].css",
 });
 
-const VENDOR_LIB = ['jquery', 'lodash'];
+const VENDOR_LIB = ['jquery', 'lodash', 'materialize-css'];
 
 module.exports = {
 	entry: {
