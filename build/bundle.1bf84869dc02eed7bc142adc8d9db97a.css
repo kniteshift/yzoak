@@ -9282,7 +9282,7 @@ p {
   }
 
   .take-control {
-    height: 55vh !important;
+    height: 75vh !important;
   }
 }
 
@@ -9382,7 +9382,7 @@ nav {
 
 video {
   object-fit: cover;
-  position: aboslute;
+  position: relative;
   width: auto;
   height: auto;
   min-width: 100%;
@@ -9394,7 +9394,7 @@ video {
   min-height: 100%;
   max-width: 100%;
   height: 100vh;
-  width: auto;
+  width: 100vw;
   left: 0;
   top: 0;
 }
@@ -9449,11 +9449,14 @@ video {
 .scroll {
   background: url(assets/img/sec3back.jpg) bottom center fixed no-repeat;
   background-size: cover;
+  min-height: 100%;
 }
 
 .take-control {
-  height: 50vh;
+  height: 700px;
   position: relative;
+  min-height: 100%;
+  width: auto;
 }
 
 .content {
