@@ -2,9 +2,10 @@
 @import 'node_modules/materialize-css/sass/materialize.scss'
 @import main
 @import responsive
+@import interact
 
 $font-stack:    'Lato', sans-serif
-$default-color: '#595959'
+$default-color: #595959
 
 html
     font-family: $font-stack
@@ -12,6 +13,13 @@ html
 
 section
     overflow: hidden
+
+h2
+    font-size: 45px
+
+.font
+    font-family: $font-stack !important
+    color: $default-color !important
 
 .z-depth-0
     background-color: transparent
@@ -22,7 +30,6 @@ section
     height: 60px
 
 nav
-    top: 1rem
     text-shadow: 1px 1px #000
 
 .nav-wrapper 
@@ -100,7 +107,7 @@ video
         margin-top: 2%
 
 .full-video
-    top: 60%
+    top: 65%
     left: 1%
     z-index: 5
     position: relative
@@ -120,6 +127,7 @@ video
     background-size: cover
     // padding-top: 2rem
     min-height: 100%
+    overflow: hidden
 
 .take-control
     min-height: 755px
@@ -156,23 +164,97 @@ video
             width: auto
 
 .workswith
-    height: 100vh
+    padding-top: 2rem
+    height: auto
+    width: 100vw
+    text-align: center
+
+#works-with-icons
+    padding-top: 2rem
+    padding-bottom: 2rem
+
+    img
+        height: 150px
+        width: auto
 
 .demo
-    height: 50vh
+    height: 55vh
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    overflow: hidden
+
+    h2
+        color: white
+        padding-top: 2rem
+        text-shadow: 1px 1px #222
+
+    img
+        padding-top: 2rem
 
 .features
-    height: 100vh
+    height: auto
+    width: 100vw
+    text-align: center
+    padding-top: 2rem
 
-.enjoy-bg
-    height: 50vh
-    background: url('../media/img/section7back.jpg') center no-repeat
-    background-size: cover
-    z-index: -1
+    #feats
+        width: 100%
+        padding-top: 2rem
+        // text-align: center
+        margin-left: 10%
+
+        img
+            height: 100px
+            width: auto
+        
+        .box
+            box-shadow: 2px 3px 2px #222
+            width: 18%
+            min-height: 300px 
+            height: auto
+            margin-right: 2rem
+            margin-bottom: 1rem
+            float: left
+
+        .feature-icon-bg
+            background: #ecf0f1
+            padding-top: 1rem
+            padding-bottom: 1rem
+
+        .caption
+            padding-top: 1rem
+            text-align: center
+        h5
+            font-size: 22px
+
+        p
+            padding-top: 1rem
+            padding-left: 1rem
+            padding-right: 1rem
+            padding-bottom: 1rem
 
 .enjoy
+    padding-top: 1rem
     color: white
+    
+    .content-block
+        padding-top: 18%
+
+    .btn
+        margin-top: 2%
+
+    .enjoy-bg
+        height: 50vh
+        background: url('../media/img/section7back.jpg') center no-repeat
+        background-size: cover
+        z-index: -1
 
 footer
-    height: 6rem
-    background: #fff
+    height: 2rem
+    background: #fff !important
+    padding-bottom: 1rem
+    
+    .footer-content
+        margin-top: - 1rem
+        padding-bottom: 2rem

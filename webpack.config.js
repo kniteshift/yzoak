@@ -7,7 +7,7 @@ const extractSass = new ExtractTextPlugin({
 	filename: "[name].[contenthash].css",
 });
 
-const VENDOR_LIB = ['jquery', 'lodash', 'materialize-css'];
+const VENDOR_LIB = ['jquery', 'lodash'];
 
 module.exports = {
 	entry: {
@@ -53,6 +53,10 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{ from: 'src/assets/media/', to: 'assets/media'}
-		])
+		]),
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery"
+		})
 	]
 }
