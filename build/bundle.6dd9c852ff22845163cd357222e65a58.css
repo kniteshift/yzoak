@@ -9280,6 +9280,10 @@ p {
   h2 {
     padding-top: 2rem !important;
   }
+
+  .take-control {
+    height: 1020px !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -9328,6 +9332,7 @@ p {
 
 html {
   font-family: "Lato", sans-serif;
+  width: 100%;
 }
 
 section {
@@ -9340,11 +9345,12 @@ section {
 }
 
 .logo {
-  height: 65px;
+  padding-top: 10px;
+  height: 60px;
 }
 
 nav {
-  top: 2rem;
+  top: 1rem;
   text-shadow: 1px 1px #000;
 }
 
@@ -9359,6 +9365,10 @@ nav {
 
 .navbar-black {
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img__ctabutton {
+  height: 50px;
 }
 
 .cta__button {
@@ -9403,6 +9413,7 @@ video {
 .masthead {
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 
 .video-bg,
@@ -9419,7 +9430,7 @@ video {
 
 .hero__msg {
   top: 40%;
-  left: 5%;
+  left: 0%;
   z-index: 8;
   position: relative;
   color: white;
