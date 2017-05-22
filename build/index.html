@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YzOak | Smart Devices For Your Home</title>
-<link href="bundle.5bb6146d80924c919485338bf79e0cef.css" rel="stylesheet"></head>
+<link href="bundle.ac078ccd2483ec65e3d3182426d7f592.css" rel="stylesheet"></head>
 <body>
-    <div class="navbar-fixed">
+    <div class="panel navbar-fixed">
         <nav class="z-depth-0">
             <div class="nav-wrapper">
                 <div class="container">
@@ -18,14 +18,14 @@
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Features</a></li>
                         <!-- needs modal -->
-                        <li><a href="#" class="btn btn-primary orange darken-2">Get YzOak First</a></li>
+                        <li><a href="#" id="navbutton" class="btn btn-primary orange darken-2">Get YzOak First</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <section class="panel masthead">
+    <section class="masthead">
         <div class="video-bg">
             <video autoplay loop class="video-play">
                 <source src="assets/media/video/video.mp4" type="video/mp4">
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section class="panel take-control scroll">
+    <section class="take-control scroll">
         <div class="container">
             <div class="row">
                 <div class="content">
@@ -77,13 +77,14 @@
         <img class="center-align responsive-img" src="assets/media/img/setup.png" alt="demo">
     </section>
 
-    <section class="features">
+    <section class="panel features">
         <div class="container">
             <h2 class="font">
                 If You Can Think It, YzOak Can Do It. 
             </h2>
-            <div id="feats">
-                
+            <div id="feats" class="row">
+                <!-- This comes from javascript -->
+
             </div>
         </div>
 
@@ -93,9 +94,8 @@
         <div class="enjoy-bg">
             <div class="container">
                 <div class="content-block">
-
-                    <h2>Enjoy Your Home. As You Should.</h2>
-                    <a class="btn btn-primary orange darken-2">Be First To Get YzOak</a>
+                    <h3>Enjoy Your Home. As You Should.</h3>
+                    <a class="btn btn-primary orange darken-2">Get YzOak First</a>
                 </div>
 
             </div>
@@ -103,9 +103,49 @@
 
     </section>
     <footer class="page-footer">
-        <div class="container footer-content">
-            <img class="logo" src="assets/media/img/logo_tag.png" alt="">
+        <div class="container">
+            <nav class="footer-nav z-depth-0">
+                    <img class="logo" src="assets/media/img/logo_tag.png" alt="">
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#" target="_blank">
+                                <img class="socialbuttons" src="assets/media/img/fb1.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img class="socialbuttons" src="assets/media/img/tw1.png" alt=" Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://angel.co/yzoak/jobs" target="_blank">
+                                <span class="careers">
+                                    Careers@YzOak
+                                </span>
+                            </a>
+                                
+                        </li>
+                        <!-- needs modal -->
+                        <li>
+                            <a href="#" class="btn btn-primary contact blue">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
         </div>
     </footer>
-<script type="text/javascript" src="manifest.b8e24849adb86a5659fd.js"></script><script type="text/javascript" src="vendor.95a3fe16c085f4253d72.js"></script><script type="text/javascript" src="bundle.bdc904c5d1d9505a24ac.js"></script></body>
+
+    <section class="mobile__cta hide-on-med-and-up">
+        <a class="orange darken-2 btn mobile-btn">Get YzOak First</a>
+    </section>
+
+    <!--- MODAL -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+    </div>
+<script type="text/javascript" src="manifest.80cb5910f144d4257f96.js"></script><script type="text/javascript" src="vendor.de49318a77cdc9bcf11e.js"></script><script type="text/javascript" src="bundle.851166bce82b1ca99da8.js"></script></body>
 </html>
