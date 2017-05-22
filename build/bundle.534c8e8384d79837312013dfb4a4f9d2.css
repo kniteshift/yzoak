@@ -9271,6 +9271,16 @@ div {
   max-width: 100%;
 }
 
+.take-control,
+.workswith,
+.demo,
+.features,
+.enjoy,
+footer {
+  position: relative;
+  background: white;
+}
+
 @media only screen and (max-width: 992px) {
   .content {
     text-align: center;
@@ -9443,12 +9453,13 @@ video {
 }
 
 .video-bg {
-  z-index: 0;
+  z-index: -1000;
   background: #000;
   max-width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  position: fixed;
 }
 
 .hero__msg {
@@ -9577,6 +9588,7 @@ video {
 
 .features #feats {
   padding-top: 2rem;
+  margin-left: 0.25rem;
 }
 
 .features .feature-item {
@@ -9650,17 +9662,12 @@ video {
 }
 
 footer {
-  height: 2rem;
+  height: 90px;
   background: #fff !important;
-  padding-bottom: 1rem;
-}
-
-footer .footer-content {
-  margin-top: -1rem;
-  padding-bottom: 2rem;
 }
 
 footer .footer-nav {
+  padding-top: 5px;
   background: white !important;
 }
 
