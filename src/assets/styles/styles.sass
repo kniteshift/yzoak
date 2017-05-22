@@ -17,6 +17,7 @@ section
 h2
     font-size: 45px
 
+
 .font
     font-family: $font-stack !important
     color: $default-color !important
@@ -45,22 +46,6 @@ nav
 .img__ctabutton
     height: 50px
 
-.cta__button
-    background: #f57b18
-    background-image: -moz-linear-gradient(top, #f57b18, #ef6c00)
-    background-image: -ms-linear-gradient(top, #f57b18, #ef6c00)
-    background-image: -o-linear-gradient(top, #f57b18, #ef6c00)
-    background-image: linear-gradient(to bottom, #f57b18, #ef6c00)
-    -webkit-border-radius: 10px
-    -moz-border-radius: 10px
-    border-radius: 10px
-    color: #ffffff
-    font-size: 16px
-    padding: 2px 5px 2px 5px
-    text-decoration: none
-    &:hover
-        background: #e6a978
-
 video
     object-fit: cover
     position: relative
@@ -69,7 +54,8 @@ video
     min-width: 100%
     min-height: 100%
     overflow: hidden
-    z-index: -2
+    z-index: -9999
+    top: 0
     
 .video-play
     min-height: 100%
@@ -93,6 +79,8 @@ video
     background: #000
     max-width: 100%
     min-height: 100vh
+    background-repeat: no-repeat
+    background-attachment: scroll
 
 .hero__msg
     top: 40%
@@ -305,6 +293,8 @@ video
         background-size: cover
         z-index: -1
 
+.mobile__cta
+
 footer
     height: 2rem
     background: #fff !important
@@ -313,3 +303,13 @@ footer
     .footer-content
         margin-top: -1rem
         padding-bottom: 2rem
+
+    .socialbuttons
+        @extend .logo
+
+    .footer-nav
+        background: white !important
+    
+    .careers
+        color: #2196f3
+        text-shadow: none
