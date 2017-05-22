@@ -1,5 +1,8 @@
 import $ from 'jquery'
-import 'materialize-css/bin/materialize.js'
+window.$ = window.jQuery = $
+window.$.velocity = require('velocity-animate/velocity.js')
+
+import Materialze from 'materialize-css/dist/js/materialize.js'
 import { WorksWith, Features } from './append'
 
 $(function(){
@@ -16,12 +19,13 @@ $(function(){
         let html = ''
 
         arr.map(set => {
-            const iconString = `<img src='assets/media/img/${path}/${set.file}' alt=${set.name} />`
 
             if(!set.caption) {
+                const iconString = `<img class="tooltipped" id="${set.name}" data-positon="top" data-delay='50' data-tooltip='${set.name}' src='assets/media/img/${path}/${set.file}' alt=${set.name} />`
                 html += iconString
             }
             else {
+                const iconString = `<img src='assets/media/img/${path}/${set.file}' alt=${set.name} />`
                 html += `<div class="box">
                     <div class="feature-icon-bg">
                         ${iconString}
@@ -41,4 +45,5 @@ $(function(){
     mapIcons(WorksWith, 'works', '#works-with-icons')
     mapIcons(Features, 'feat', '#feats')
 
+    $('.tooltipped').tooltip({'delay': 50})
 })

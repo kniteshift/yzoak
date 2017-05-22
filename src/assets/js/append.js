@@ -9,19 +9,19 @@ export const WorksWith = [
         name: 'Nest',
         file: 'nest.png'
     },{
-        name: 'AmazonAlexa',
+        name: 'Amazon Alexa',
         file: 'alexa.png'
     },{
-        name: 'GoogleAssistant',
+        name: 'Google Assistant',
         file: 'assistant.png'
     },{
         name: 'HomeKit',
         file: 'homekit.png'
     },{
-        name: 'SmartThings',
+        name: 'Smart Things',
         file: 'smartthings2.png'
     },{
-        name: 'PhilipsHue',
+        name: 'Philips Hue',
         file: 'hue3.png'
     },{
         name: 'Wemo',
@@ -31,7 +31,7 @@ export const WorksWith = [
         file: 'lifx2.png'
     },{
         name: 'Wink',
-        file: 'wink1.png'
+        file: 'wink.png'
     },{
         name: 'Sonos',
         file: 'sonos2.png'
@@ -69,7 +69,7 @@ export const WorksWith = [
         name: 'Zwave',
         file: 'zwave.png'
     },{
-        name: 'AndMore',
+        name: "And More",
         file: 'andmore.png'
     }
 ]

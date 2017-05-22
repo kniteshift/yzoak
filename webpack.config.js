@@ -53,10 +53,6 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{ from: 'src/assets/media/', to: 'assets/media'}
-		]),
-		new webpack.ProvidePlugin({
-			$: "jquery",
-			jQuery: "jquery"
-		})
+		])
 	]
 }
