@@ -26,13 +26,15 @@ $(function(){
             }
             else {
                 const iconString = `<img src='assets/media/img/${path}/${set.file}' alt=${set.name} />`
-                html += `<div class="box">
-                    <div class="feature-icon-bg">
-                        ${iconString}
-                    </div>
-                    <div class="caption">
-                        <h5>${set.name}</h5>
-                        <p>${set.caption}</p>
+                html += `<div class="col s6 m6 l3 feature-item">
+                    <div class="box">
+                        <div class="feature-icon-bg">
+                            ${iconString}
+                        </div>
+                        <div class="caption">
+                            <h5>${set.name}</h5>
+                            <p>${set.caption}</p>
+                        </div>
                     </div>
                 </div>`    
             }
