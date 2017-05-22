@@ -75,12 +75,13 @@ video
     position: absolute
 
 .video-bg
-    z-index: 0
+    z-index: -1000
     background: #000
     max-width: 100%
     min-height: 100vh
     background-repeat: no-repeat
     background-attachment: scroll
+    position: fixed
 
 .hero__msg
     top: 40%
@@ -233,6 +234,7 @@ video
 
     #feats
         padding-top: 2rem
+        margin-left: 0.25rem
         
     .feature-item
         float: left
@@ -296,18 +298,14 @@ video
 .mobile__cta
 
 footer
-    height: 2rem
+    height: 90px
     background: #fff !important
-    padding-bottom: 1rem
-    
-    .footer-content
-        margin-top: -1rem
-        padding-bottom: 2rem
 
     .socialbuttons
         @extend .logo
 
     .footer-nav
+        padding-top: 5px
         background: white !important
     
     .careers
