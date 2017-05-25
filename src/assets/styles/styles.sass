@@ -76,27 +76,35 @@ video
 
 .video-bg
     z-index: -1000
-    background: #000
+    // background: #000
     max-width: 100%
     min-height: 100vh
     background-repeat: no-repeat
     background-attachment: scroll
     position: fixed
 
+.mobile-img-bg
+    background: url('../media/img/yzlight.png') top center
+    background-size: cover
+    z-index: -1000
+    height: 100%
+    width: auto
+    
 .hero__msg
     top: 40%
     left: 0%
     z-index: 8
-    position: relative
+    position: absolute
     color: white
     text-align: center
     text-shadow: 2px 2px #222
+    width: 100%
     
     img
         margin-top: 2%
 
 .full-video
-    top: 65%
+    top: 80%
     left: 1%
     z-index: 5
     position: relative
@@ -295,14 +303,18 @@ video
         background-size: cover
         z-index: -1
 
-.mobile__cta
-
 footer
     height: 90px
     background: #fff !important
 
+    .footer-logo
+        height: 60px
+        padding-top: 10px
+        margin-left: 15px
+
     .socialbuttons
-        @extend .logo
+        @extend .footer-logo
+        margin-left: 0px
 
     .footer-nav
         padding-top: 5px
