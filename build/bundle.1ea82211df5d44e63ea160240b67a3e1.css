@@ -9353,6 +9353,12 @@ footer {
   }
 }
 
+@media (min-width: 1516px) and (max-width: 1547px) {
+  .image-set {
+    height: 250px !important;
+  }
+}
+
 .mobile-btn {
   position: fixed;
   bottom: 0;
