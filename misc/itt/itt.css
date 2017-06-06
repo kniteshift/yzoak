@@ -1,0 +1,148 @@
+
+
+.desk img { 
+	max-width:99vw;
+	max-height:80vh; 
+}
+.mobile img { 
+	max-width:100%;	 
+}
+
+@media screen and (min-width: 799px) {
+.mobile {display:none;}
+
+}
+
+@media screen and (max-width: 800px) {
+    .desk {
+        display:none;
+    }
+    .mobile {
+        display: table;
+    }
+}  
+
+
+
+.btn {
+  background: #f57b18;
+  background-image: -webkit-linear-gradient(top, #f57b18, #ef6c00);
+  background-image: -moz-linear-gradient(top, #f57b18, #ef6c00);
+  background-image: -ms-linear-gradient(top, #f57b18, #ef6c00);
+  background-image: -o-linear-gradient(top, #f57b18, #ef6c00);
+  background-image: linear-gradient(to bottom, #f57b18, #ef6c00);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: lato;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e6a978;
+  background-image: -webkit-linear-gradient(top, #e6a978, #d9a275);
+  background-image: -moz-linear-gradient(top, #e6a978, #d9a275);
+  background-image: -ms-linear-gradient(top, #e6a978, #d9a275);
+  background-image: -o-linear-gradient(top, #e6a978, #d9a275);
+  background-image: linear-gradient(to bottom, #e6a978, #d9a275);
+  text-decoration: none;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+max-width:500px;
+  margin:  70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+#mobilecontent .btn {
+	
+	width:100%;
+}
+
+#footerblock {
+	font-family:lato;
+	Font-size:18px;
+}
+@media only screen and (max-width: 800px) {
+
+.btn {
+    display: block;
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 0;
+    padding: 11.5px;
+    text-transform: uppercase;
+}
+} 
