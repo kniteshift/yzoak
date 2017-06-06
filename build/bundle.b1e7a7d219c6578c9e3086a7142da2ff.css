@@ -9313,9 +9313,13 @@ footer {
   .take-control {
     height: 1050px !important;
   }
+
+  .hero__msg {
+    top: 25% !important;
+  }
 }
 
-@media (min-width: 1515px) and (max-width: 1759px) {
+@media (min-width: 1515px) and (max-width: 1760px) {
   .content,
   .image-set {
     height: 300px !important;
@@ -9364,7 +9368,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 9999;
 }
 
 .material-tooltip {
@@ -9385,6 +9389,33 @@ footer {
 
 .modal .open {
   margin-top: 15%;
+}
+
+#contact-form {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999999;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#contact-form .email {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#contact-form .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 60px;
 }
 
 html {
@@ -9478,7 +9509,7 @@ video {
 }
 
 .mobile-img-bg {
-  background: url(assets/img/yzlight.png) top center;
+  background: url(assets/media/img/yzlight.png) top center;
   background-size: cover;
   z-index: -1000;
   height: 100%;
@@ -9519,7 +9550,7 @@ video {
 }
 
 .scroll {
-  background: url(assets/img/sec3back.jpg) bottom center fixed no-repeat;
+  background: url(assets/media/img/sec3back.jpg) bottom center fixed no-repeat;
   background-size: cover;
   min-height: 100%;
   overflow: hidden;
@@ -9680,7 +9711,7 @@ video {
 
 .enjoy .enjoy-bg {
   height: 100%;
-  background: url(assets/img/section7back.jpg) bottom center no-repeat;
+  background: url(assets/media/img/section7back.jpg) bottom center no-repeat;
   background-size: cover;
   z-index: -1;
 }

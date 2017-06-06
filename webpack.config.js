@@ -1,8 +1,9 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack');
+const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const webpack = require('webpack')
 const extractSass = new ExtractTextPlugin({
 	filename: "[name].[contenthash].css",
 });
@@ -31,7 +32,7 @@ module.exports = {
 			},{
 				test: /\.(jpe?g|png|gif|svg)$/,
 				include: /src/,
-				use: 'url-loader?limit=5000&name=assets/img/[name].[ext]'
+				use: 'url-loader?limit=5000&name=assets/media/img/[name].[ext]'
 			},{
 				test: /\.(mp4)$/,
 				use: 'url-loader?limit=500000&name=assets/video/[name].[ext]'
@@ -39,7 +40,7 @@ module.exports = {
 				test: /\.(sass|scss)$/,
 				include: [/(src)/, /(node_modules)/],
 				exclude: /fonts/,
-				use: ExtractTextPlugin.extract(['css-loader', 'resolve-url-loader', 'sass-loader?sourceMap'])
+				use: ExtractTextPlugin.extract(['css-loader?-minimize', 'resolve-url-loader', 'sass-loader?sourceMap'])
 			}
 		],
 	},
@@ -53,6 +54,7 @@ module.exports = {
 		}),
 		new CopyWebpackPlugin([
 			{ from: 'src/assets/media/', to: 'assets/media'}
-		])
+		]),
+		new UglifyJSPlugin({})
 	]
 }

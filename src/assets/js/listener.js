@@ -29,6 +29,19 @@ export const mapIcons = (arr, path, selector) => {
     $(selector).append(html)
 }
 
+export const openContactPage = $('#contactus').click((e) => {
+        console.log('clicked')
+        e.preventDefault()
+        $('#contact-form').css('width', '100%')
+    })
+
+export const closeContactPage = $('#emailclose').click((e) => {
+        e.preventDefault()
+        $('#contact-form').css('width', '0%')
+    })
+
+
+
 export function callPlayer(frame_id, func, args) {
     if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id
         var iframe = document.getElementById(frame_id)

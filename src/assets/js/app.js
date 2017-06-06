@@ -4,7 +4,7 @@ window.$.velocity = require('velocity-animate/velocity.js')
 
 import Materialze from 'materialize-css/dist/js/materialize.js'
 import { WorksWith, Features } from './append'
-import { mapIcons, callPlayer } from './listener'
+import { mapIcons, callPlayer, openContactPage, closeContactPage } from './listener'
 
 $(function(){
 
@@ -39,5 +39,5 @@ $(function(){
 
     $('.modal').modal(modalOptions)
         
-     
+    
 })
