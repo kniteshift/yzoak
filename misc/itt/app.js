@@ -6,7 +6,7 @@ cta.addEventListener('click', function() {
         hitType: 'event',
         eventCategory: 'contest',
         eventAction: 'entry',
-        eventLabel: 'GQ',
+        eventLabel: 'ITT',
         eventValue: 1
     })
 
