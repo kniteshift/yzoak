@@ -14,11 +14,11 @@ const misc = (folder, file) => { return path.join(__dirname, 'misc', folder, fil
 // 9. Finally, you can set it to redirect by changing the .redirect function... in example res.status(301).redirect('someindex.html')
 // The quotation or apostrophe's are important  
 
-module.exports = (app) => {
+// module.exports = (app) => {
 
-    // For contest and landing pages
-    app.get('/gq', (req, res) => {
-        res.status(200).render(misc('gq', 'index.html'))
-    })
+//     // For contest and landing pages
+//     app.get('/gq', (req, res) => {
+//         res.status(200).render(misc('gq', 'index.html'))
+//     })
     
-}
+// }
