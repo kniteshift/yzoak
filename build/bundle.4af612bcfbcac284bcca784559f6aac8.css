@@ -9437,6 +9437,20 @@ footer {
   transform: scale(1.2);
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.faded {
+  animation: fadein 2s;
+}
+
 html {
   font-family: "Lato", sans-serif;
   width: 100%;
