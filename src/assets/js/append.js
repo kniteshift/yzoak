@@ -45,7 +45,7 @@ export const WorksWith = [
         name: 'iHeartRadio',
         file: 'iheartradio.png'
     },{
-        name: 'Insteaon',
+        name: 'Insteon',
         file: 'insteon.png'
     },{
         name: 'Thread',
