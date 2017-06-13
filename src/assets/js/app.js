@@ -7,19 +7,28 @@ import { WorksWith, Features } from './append'
 import { mapIcons, callPlayer, openContactPage, closeContactPage } from './listener'
 
 $(function(){
-
-    // Trigger scrollfire
-    let scrollOptions = [
-        {selector: '.take-control', offset:200, callback: (el) => {
-            console.log('test')
-            $('.nav-wrapper').addClass('navbar-black')
-        }}
-    ]
-    Materialize.scrollFire(scrollOptions)
-
     // Map the Icons to the DOM Progammatically
     mapIcons(WorksWith, 'works', '#works-with-icons')
     mapIcons(Features, 'feat', '#feats')
+
+    // Trigger scrollfire
+    let options = [
+        {selector: '.take-control', offset:200, callback: (el) => {
+            $('.nav-wrapper').addClass('navbar-black')
+        }},
+        {selector: '.features', offset: 200, callback: (el) => {
+            $('.box').addClass('faded')
+        }}
+    ]
+
+    // let featuresOptions = [
+    //     {selector: '.features', offset: 200, callback: (el) => {
+    //         $('.box').addClass('faded')
+    //     }}
+    // ]
+
+    Materialize.scrollFire(options)
+    // Materialize.scrollFire(featuresOptions)
 
     // Init ToolTip
     $('.tooltipped').tooltip({'delay': 50})
