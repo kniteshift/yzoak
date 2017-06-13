@@ -122,6 +122,6 @@ export const Features = [
     },{
         name: 'Privacy-Minded',
         file: 'lock.png',
-        caption: "We don’t comb through your personal data to sell you stuff"
+        caption: "We don’t comb through your personal data to sell you stuff."
     }
 ]

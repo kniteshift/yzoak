@@ -9621,13 +9621,14 @@ video {
 }
 
 .content .image-set {
-  display: inline;
+  display: inline-table;
   height: 350px;
 }
 
 .content .image-set img {
   height: inherit;
   width: auto;
+  margin-left: 1%;
 }
 
 .workswith {
