@@ -9372,6 +9372,12 @@ footer {
   }
 }
 
+@media (min-width: 1760px) and (max-width: 1792px) {
+  .image-set {
+    height: 335px !important;
+  }
+}
+
 .mobile-btn {
   position: fixed;
   bottom: 0;
@@ -9621,14 +9627,13 @@ video {
 }
 
 .content .image-set {
-  display: inline-table;
+  display: inline;
   height: 350px;
 }
 
 .content .image-set img {
   height: inherit;
   width: auto;
-  margin-left: 1%;
 }
 
 .workswith {
