@@ -18,17 +18,24 @@ $(function(){
         }},
         {selector: '.features', offset: 200, callback: (el) => {
             $('.box').addClass('faded')
-        }}
+        }},
     ]
-
-    // let featuresOptions = [
-    //     {selector: '.features', offset: 200, callback: (el) => {
-    //         $('.box').addClass('faded')
-    //     }}
-    // ]
-
     Materialize.scrollFire(options)
-    // Materialize.scrollFire(featuresOptions)
+    
+    let last_known_scroll_position = 0
+
+    window.addEventListener('scroll', (e) => {
+        last_known_scroll_position = window.scrollY
+
+        if (last_known_scroll_position <= 300) {
+            $('.nav-wrapper').removeClass('navbar-black')
+        } 
+        else {
+            $('.nav-wrapper').addClass('navbar-black')
+        }
+
+    })
+
 
     // Init ToolTip
     $('.tooltipped').tooltip({'delay': 50})
@@ -38,11 +45,15 @@ $(function(){
         opacity: .5,
         inDuration: 300,
         outDuration: 200,
+        ready: () => {
+            $('#homeVideo').get(0).pause()
+        },
         complete: () => {
                 var $this = $(this).find('iframe'),
                 tempSrc = $this.attr('src');
                 $this.attr('src', "");
                 $this.attr('src', tempSrc);
+                $('#homeVideo').get(0).play()
         }
     }
 

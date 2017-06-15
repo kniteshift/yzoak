@@ -41,7 +41,7 @@ module.exports = {
 				test: /\.(sass|scss)$/,
 				include: [/(src)/, /(node_modules)/],
 				exclude: /fonts/,
-				use: ExtractTextPlugin.extract(['css-loader?-minimize', 'resolve-url-loader', 'sass-loader?sourceMap'])
+				use: ExtractTextPlugin.extract(['css-loader?-minimize', 'resolve-url-loader', 'sass-loader?sourceMap']),
 			}
 		],
 	},
