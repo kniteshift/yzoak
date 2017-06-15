@@ -1,1 +1,9 @@
 /src
+/node_modules
+webpack.config.js
+gulpfile.js
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
