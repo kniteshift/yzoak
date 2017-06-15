@@ -9,7 +9,7 @@ const misc = __dirname + "/misc/"
 
 app.use(morgan('dev'))
 
-app.use(express.static(pub))
+app.use(express.static(pub, { maxAge: 31557600000 }))
 app.use(express.static(misc))
 routes(app)
 
