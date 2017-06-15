@@ -50,12 +50,12 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			filename: 'index.html',
 			template: 'src/index.html',
-			chunks: ['index']
+			chunks: ['index', 'vendor', 'manifest']
 		}),
 		new HtmlWebPackPlugin({
 			filename: 'product.html',
 			template: 'src/product.html',
-			chunks: ['product']
+			chunks: ['product', 'vendor', 'manifest']
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: ['vendor', 'manifest']
