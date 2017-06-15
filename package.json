@@ -38,7 +38,6 @@
     "html-webpack-plugin": "^2.28.0",
     "morgan": "^1.8.1",
     "node-sass": "^4.5.2",
-    "optimize-css-assets-webpack-plugin": "^2.0.0",
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.5",
     "uglifyjs-webpack-plugin": "^0.4.3",
