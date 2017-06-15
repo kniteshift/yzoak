@@ -61,8 +61,7 @@ module.exports = {
 			name: ['vendor', 'manifest']
 		}),
 		new CopyWebpackPlugin([
-			{ from: 'src/assets/media/docs', to: 'assets/media/docs' },
-			{ from: 'src/assets/media/video', to: 'assets/media/video' }
+			{ from: 'src/assets/media', to: 'assets/media' }
 		]),
 		new UglifyJSPlugin({})
 	]

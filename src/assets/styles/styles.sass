@@ -20,10 +20,6 @@ h2
     font-family: $font-stack !important
     color: $default-color !important
 
-.z-depth-0
-    background-color: transparent
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
-
 .img__ctabutton
     height: 50px
 
@@ -51,10 +47,6 @@ video
     height: 100vh
     width: 100%
 
-.video-bg,
-.hero-msg
-    position: absolute
-
 .video-bg
     z-index: -1000
     // background: #000
@@ -63,6 +55,10 @@ video
     background-repeat: no-repeat
     background-attachment: scroll
     position: fixed
+
+.video-bg,
+.hero-msg
+    position: absolute
 
 .mobile-img-bg
     background: url('../media/img/yzlight.png') top center
