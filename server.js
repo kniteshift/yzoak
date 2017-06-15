@@ -11,11 +11,8 @@ app.use(morgan('dev'))
 
 app.use(express.static(pub))
 app.use(express.static(misc))
-// routes(app)
+routes(app)
 
-app.get('/*', (req, res) => {
-    res.status(404).end()
-})
 
 app.listen(PORT, () => {
     console.log('Listening on:', PORT)
