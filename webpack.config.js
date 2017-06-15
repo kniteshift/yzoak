@@ -12,7 +12,8 @@ const VENDOR_LIB = ['jquery', 'lodash'];
 
 module.exports = {
 	entry: {
-		bundle: ['./src/assets/js/app.js', './src/assets/styles/styles.sass'],
+		index: ['./src/assets/js/app.js', './src/assets/styles/styles.sass'],
+		product: ['./src/assets/js/product.js', './src/assets/styles/product.sass'],
 		vendor: VENDOR_LIB
 	},
 	output: {
@@ -47,7 +48,14 @@ module.exports = {
 	plugins: [
 		extractSass,
 		new HtmlWebPackPlugin({
-			template: 'src/index.html'
+			filename: 'index.html',
+			template: 'src/index.html',
+			chunks: ['index']
+		}),
+		new HtmlWebPackPlugin({
+			filename: 'product.html',
+			template: 'src/product.html',
+			chunks: ['product']
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: ['vendor', 'manifest']
