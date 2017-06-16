@@ -21,10 +21,6 @@ module.exports = (app) => {
         res.status(301).redirect('/')
     })
 
-    app.get('/product',  (req, res) => {
-        res.status(307).redirect('/')
-    })
-
     // 404 message
     app.get('/*', (req, res) => {
         res.status(404).end()
