@@ -15,4 +15,4 @@ gulp.task('minify-html', () => {
         .pipe(gulp.dest('build'))
 })
 
-gulp.task('optimize', ['minify-html', 'minify-css'])
+gulp.task('optimize', ['minify-css'])

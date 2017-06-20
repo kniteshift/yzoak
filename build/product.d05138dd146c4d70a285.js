@@ -1,1 +1,27 @@
-webpackJsonp([2],{15:function(n,t,c){c(2),n.exports=c(3)},2:function(n,t,c){"use strict"},3:function(n,t){}},[15]);
+webpackJsonp([2],{
+
+/***/ 15:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(2);
+module.exports = __webpack_require__(3);
+
+
+/***/ }),
+
+/***/ 2:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ })
+
+},[15]);

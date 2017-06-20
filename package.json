@@ -8,7 +8,7 @@
     "start": "node server.js",
     "server-dev": "nodemon server.js",
     "clean-front": "rimraf build",
-    "build": "npm run clean-front && webpack && gulp optimize",
+    "build": "npm run clean-front && webpack",
     "serve": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
