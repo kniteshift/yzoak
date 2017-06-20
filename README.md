@@ -89,3 +89,7 @@ If you want to inevitably delete pages, due to age and time frame that it's been
 ## Notes / To Do
 - Replace Webpack with Gulp for building/compilation
 - Add Webpack back in for dependency management
+
+## Contact
+- This website and server was created by Alan Lee
+- If any assistance is required, please contact Alan Lee @ alanleunglee@gmail.com
