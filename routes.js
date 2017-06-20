@@ -1,3 +1,4 @@
+const key = require('./config')
 const path = require('path')
 const misc = (folder, file) => { return path.join(__dirname, 'misc', folder, file) }
 
@@ -21,6 +22,9 @@ module.exports = (app) => {
         res.status(301).redirect('/')
     })
 
+    app.get('/a', (req, res) => {
+        res.status(200).json(key)
+    })
     // 404 message
     app.get('/*', (req, res) => {
         res.status(404).end()
